@@ -23,11 +23,17 @@ const Home = () => {
 
   return (
     <>
-      <SeoMeta />
+      <section id="first"></section>
+      <p></p>
       <section className="section pt-14">
+        <SeoMeta />
         <div className="container">
           <div className="row justify-center">
             <div className="lg:col-7 md:col-9 mb-8 text-center">
+              <p
+                className="mb-8"
+                // dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
+              />
               <h1
                 className="mb-4 text-h3 lg:text-h1"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
@@ -67,6 +73,7 @@ const Home = () => {
 
       {features.map((feature, index: number) => (
         <section
+          id="second"
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient"}`}
         >
@@ -118,9 +125,12 @@ const Home = () => {
           </div>
         </section>
       ))}
-
-      <Testimonials data={testimonial} />
-      <CallToAction data={callToAction} />
+      <section id="third" className="section pt-14">
+        <Testimonials data={testimonial} />
+      </section>
+      <section id="fourth" className="section pt-14">
+        <CallToAction data={callToAction} />
+      </section>
     </>
   );
 };

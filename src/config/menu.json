@@ -6,42 +6,19 @@
     },
     {
       "name": "About",
-      "url": "/about"
+      "url": "first"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Tokenomics",
+      "url": "second"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Contact",
-          "url": "/contact"
-        },
-        {
-          "name": "Blog",
-          "url": "/blog"
-        },
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
-        }
-      ]
+      "name": "Road Map",
+      "url": "third"
+    },
+    {
+      "name": "Ruffle",
+      "url": "fourth"
     }
   ],
   "footer": [
